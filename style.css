@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+a-scene {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Optional: Style for error messages or overlays */
+#error-message {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  z-index: 10;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  a-scene {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  #error-message {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+} 
